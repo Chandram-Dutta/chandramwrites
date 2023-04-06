@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/MarkdownPostLayout.astro
 title: "The Story"
 pubDate: 2023-04-06
 description: "The story & motto behind building this blog site."
