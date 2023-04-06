@@ -1,0 +1,36 @@
+---
+layout: ../layouts/MarkdownPostLayout.astro
+title: "The Story"
+pubDate: 2023-04-06
+description: "The story & motto behind building this blog site."
+author: "Chandram Dutta"
+tags: ["life-update", "blog", "letter"]
+---
+
+Hi there,
+<br />
+<br />
+6th April 2023.
+<br />
+<br />
+I am Chandram Dutta, a passionate developer and student currently pursuing
+my studies at <a href="https://vit.ac.in/">VIT</a>, India. As a tech
+enthusiast, I've always dreamt of building my own personal blog site, but
+I was in a bit of a conundrum regarding the ideal tech stack to use.
+<br />
+<br />
+I craved a framework that would not only load quickly, but would also be easy
+to modify, cutting-edge, and wouldn't require me to write loads of JavaScript
+(because let's be real, who wants to do that?). After much searching, I stumbled
+upon <a href="https://astro.build/">Astro</a> - and it was love at first sight.
+<br />
+<br />
+In this blog site, I'll be sharing my technical knowledge, personal thoughts,
+and life updates. It'll be my journal, but also a helpful guide for fellow
+tech enthusiasts out there. I'm ecstatic to have you here, and I hope you enjoy
+reading my musings.
+<br />
+<br />
+Best Regards,
+<br />
+Chandram Dutta.

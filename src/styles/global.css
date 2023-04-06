@@ -1,0 +1,60 @@
+html {
+  background-color: black;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 24px;
+}
+
+h1 {
+  color: white;
+  border: 5px;
+  border-style: solid;
+  border-color: white;
+  padding: 24px;
+  font-size: 48px;
+}
+
+.topbara {
+  color: white;
+  text-decoration: none;
+  border: 5px;
+  border-style: solid;
+  border-color: white;
+  padding: 12px;
+  margin-right: 8px;
+}
+
+.indexletter {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  text-align: justify;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+
+.blogtext {
+  font-size: 22px;
+  text-align: justify;
+}
+.highlightedText {
+  color: orange;
+}
+
+.blogList {
+  background-color: white;
+  padding: 12px;
+  color: black;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}

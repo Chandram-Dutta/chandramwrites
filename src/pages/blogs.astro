@@ -1,0 +1,22 @@
+---
+import BaseLayout from "./layouts/BaseLayout.astro";
+const allPosts = await Astro.glob("../pages/posts/*.md");
+const headertitle = "Blogs";
+---
+
+<BaseLayout headertitle={headertitle}>
+  <br /><br /><br />
+  {
+    allPosts.map((post) => (
+      <a href={post.url}>
+        <div class="blogList">
+          <h3>{post.frontmatter.title}</h3>
+          <p>
+            Published on {post.frontmatter.pubDate.slice(0, 10)} by{" "}
+            {post.frontmatter.author}
+          </p>
+        </div>
+      </a>
+    ))
+  }
+</BaseLayout>
