@@ -62,9 +62,8 @@ Now, run `flutter doctor` and you should see all ticks green, if not, copy the r
 
 ## The app
 
-So, a couple of days ago, I posted an app I was building as a side project on Twitter
-
-%[https://twitter.com/chandramdutta/status/1609575130832965632?s=61&t=J-V5dlTHyy6puGQryDxvgg]
+So, a couple of days ago, I posted an app I was building as a [side project on Twitter]
+(https://twitter.com/chandramdutta/status/1609575130832965632?s=61&t=J-V5dlTHyy6puGQryDxvg
 
 and realised there aren't any great Tutorials for the appwrite+flutter community. One resource worth mentioning is the [React Bits (Damodar Lohani) Flutter + Appwrite Tutorial Series on YouTube](https://youtube.com/playlist?list=PLUiueC0kTFqI9WIeUSkKvM-a_3fyaIiuk) however it's based on a very old version of Appwrite which isn't compatible with the latest version. The other and best resource is the [Official Appwrite Docs](https://appwrite.io/docs) which is the main source of knowledge in this blog series. To create a strong resource on integrating Appwrite perfectly with Flutter, I decided to document the entire process of developing the **Recipe App**, a social media for sharing your mouthwatering recipes to the world, in this blog series and mind you, I am still building the app at the time of writing this blog so let's learn together and build in public.
 
