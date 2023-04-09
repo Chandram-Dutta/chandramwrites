@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "Appwrite + Flutter: The Pilot Blog."
-pubDate: 2023-04-06
+pubDate: 6th April 2023
 description: "Let's learn to work with the best of the BaaS world and undoubtedly the best cross-platform UI toolkit."
 author: "Chandram Dutta"
 tags: ["life-update", "blog", "letter"]

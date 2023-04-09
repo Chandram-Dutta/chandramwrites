@@ -9,7 +9,7 @@ const { frontmatter } = Astro.props;
   <hr />
   <h2 class="highlightedText">{frontmatter.description}</h2>
   <p class="highlightedText">By {frontmatter.author}</p>
-  <p class="highlightedText">Published on {frontmatter.pubDate.slice(0, 10)}</p>
+  <p class="highlightedText">Published on {frontmatter.pubDate}</p>
   <hr />
   <div class="blogtext"><slot /></div>
 </BaseLayout>

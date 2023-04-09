@@ -7,13 +7,12 @@ const headertitle = "Blogs";
 <BaseLayout headertitle={headertitle}>
   <br /><br /><br />
   {
-    allPosts.map((post) => (
+    allPosts.reverse().map((post) => (
       <a href={post.url}>
         <div class="blogList">
           <h3>{post.frontmatter.title}</h3>
           <p>
-            Published on {post.frontmatter.pubDate.slice(0, 10)} by{" "}
-            {post.frontmatter.author}
+            Published on {post.frontmatter.pubDate} by {post.frontmatter.author}
           </p>
         </div>
       </a>
