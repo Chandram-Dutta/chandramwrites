@@ -1,9 +1,14 @@
 ---
-const { headertitle } = Astro.props;
 ---
 
-<h1>
-  {headertitle}
-</h1>
-<a class="topbara" href="/chandramwrites/">Home</a>
-<a class="topbara" href="/chandramwrites/blogs/">Blogs</a>
+<header>
+  <nav style="margin-right: 24px;">
+    <a href="/">
+      <img src="/home.svg" />
+    </a>
+    <div>
+      <h3>Chandram's Blog</h3>
+      <h1><slot /></h1>
+    </div>
+  </nav>
+</header>

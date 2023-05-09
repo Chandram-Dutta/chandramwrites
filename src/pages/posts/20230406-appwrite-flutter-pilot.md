@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+# layout: ../../layouts/MarkdownPostLayout.astro
 title: "Appwrite + Flutter: The Pilot Blog."
 pubDate: 6th April 2023
 description: "Let's learn to work with the best of the BaaS world and undoubtedly the best cross-platform UI toolkit."

@@ -1,39 +1,88 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-
-const headertitle = "Chandram Writes";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+const allPosts = await Astro.glob("../pages/posts/20230406-the-story.md");
+const latestPost = allPosts[0];
 ---
 
-<BaseLayout headertitle={headertitle}>
-  <div class="indexletter">
-    <p>
-      Hi there,
-      <br />
-      <br />
-      6th April 2023.
-      <br />
-      <br />
-      I am Chandram Dutta, a passionate developer and student currently pursuing
-      my studies at <a href="https://vit.ac.in/">VIT</a>, India. As a tech
-      enthusiast, I've always dreamt of building my own personal blog site, but
-      I was in a bit of a conundrum regarding the ideal tech stack to use.
-      <br />
-      <br />
-      I craved a framework that would not only load quickly, but would also be easy
-      to modify, cutting-edge, and wouldn't require me to write loads of JavaScript
-      (because let's be real, who wants to do that?). After much searching, I stumbled
-      upon <a href="https://astro.build/">Astro</a> - and it was love at first sight.
-      <br />
-      <br />
-      In this blog site, I'll be sharing my technical knowledge, personal thoughts,
-      and life updates. It'll be my journal, but also a helpful guide for fellow
-      tech enthusiasts out there. I'm ecstatic to have you here, and I hope you enjoy
-      reading my musings.
-      <br />
-      <br />
-      Best Regards,
-      <br />
-      Chandram Dutta.
-    </p>
-  </div>
-</BaseLayout>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      .profile-picture {
+        margin-top: 24px;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        border: 8px;
+        border-color: white;
+        border-style: solid;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .latest-post-card {
+        margin: 12px;
+        color: #000000;
+        text-decoration: none;
+        background: #ffffff;
+        border-radius: 12px;
+        margin-bottom: 100px;
+        height: 25%;
+        width: 90%;
+        max-width: 500px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      .latest-post-card > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .latest-post-card:hover {
+        background: #000000;
+        color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+      }
+    </style>
+    <title>Chandram Writes</title>
+  </head>
+  <body>
+    <div
+      style="display: flex; flex-direction: column; flex-grow: 1; align-items: center; justify-content: center;"
+    >
+      <img
+        class="profile-picture"
+        src="/profile_picture.jpeg"
+        alt="Chandram Dutta"
+      />
+      <h1>Chandram's Blog</h1>
+      <div>
+        <button onclick="location.href = '/blog'"> read more blogs</button>
+        <button onclick="window.open('https://chandramdutta.substack.com')"
+          >also on substack</button
+        >
+      </div>
+    </div>
+    <a class="latest-post-card" href={latestPost.url}
+      ><div>
+        <h2>Read {latestPost.frontmatter.title}</h2>
+        <small>by {latestPost.frontmatter.author}</small>
+        <p style="padding:12px; text-align:center">
+          {latestPost.frontmatter.description}
+        </p>
+      </div></a
+    >
+
+    <Footer />
+  </body>
+</html>
